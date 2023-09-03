@@ -24,10 +24,14 @@ def update_bar_chart(slider_range):
     df = px.data.iris() # replace with your own data source
     low, high = slider_range
     mask = (df['petal_width'] > low) & (df['petal_width'] < high)
+  
     fig = px.scatter(
         df[mask], x="sepal_width", y="sepal_length", 
-        color="species", size='petal_length', 
-        hover_data=['petal_width'])
+        color="species", size='petal_width', 
+        hover_data=['petal_length'])
+
+
+  
     return fig
 
 if __name__ == '__main__': 
