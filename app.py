@@ -5,7 +5,7 @@ app = Dash(__name__)
 server = app.server
 
 app.layout = html.Div([
-    html.H4('Interactive scatter plot with Iris dataset'),
+    html.H4('İris Dataset Deneme Grafik'),
     dcc.Graph(id="scatter-plot"),
     html.P("Filter by petal width:"),
     dcc.RangeSlider(
