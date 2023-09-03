@@ -34,5 +34,16 @@ def update_bar_chart(slider_range):
   
     return fig
 
+
+datam = [{
+
+"A":1,
+  "B":2,
+  "C":3
+  
+}]
+
+print(datam)
+
 if __name__ == '__main__': 
     app.run_server(host='0.0.0.0',debug=True)
